@@ -1,4 +1,4 @@
-<b>This directory holds files for </b><br>
+<b>This directory hold files for </b><br>
 <ol type="I">
 <li>The admin user account 
 <li>PNR Verification for registering a request/complain for misplaced baggage
