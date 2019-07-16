@@ -1,6 +1,6 @@
 <?php
 $conn = mysqli_connect("localhost","root");
-
+mysqli_select_db($conn,"aai");
 //if($conn) echo"Connected successfully";
 if(isset($_POST['submit'])){
     $name=$_POST['name'];
