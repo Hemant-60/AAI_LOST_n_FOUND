@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <style type="text/css">
+            .display{
+              background-image: linear-gradient(to right, #000046,#1CB5E0);
+             border-radius:20px;
+              box-shadow: 3px 3px 8px #ffffff;
+              padding:20px;
+              color:#ffff99;
+             margin-left:100px;
+             margin-right:100px;
+            }
+         </style>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Lost Luggage</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+        
+    
+    <div class="page-wrapper bg-blue p-t-40 p-b-40 font-robo">
+        <br><br>
+            <div class="row display">
+                     <center><a href="../../index.php" style="text-decoration: none;color:#ffffff;">Homepage</a>
+                     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+                     <a href="../../account/examples/list.php" style="text-decoration: none;color:#ffffff;">View Lost and Found List</a>
+               </center> </div>
+            <br><br>
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Post your lost luggage</h2>
+                   
+                    <form method="post" action="lost.php">
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="name" name="name">
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label>Date of misplaced luggage</label>
+                                    <input class="input--style-1" type="date" placeholder="Date Lost" name="date">
+                                   
+                                </div>
+                            </div>
+
+
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="category">
+                                            <option disabled="disabled" selected="selected">Category of Luggage</option>
+                                            <option value="bag">Bag/box</option>
+                                            <option value="card">Card/Documents</option>
+                                            <option value="cloth">Clothes</option>
+                                            <option value="costly">Costly Item</option>
+                                            <option value="currency">Currency</option>
+                                            <option value="Misc">Miscellaneous</option>
+                                            <option value="perish">Perishable Items</option>
+                                            <option value="personal">Personal Belongings</option>
+                                            <option value="religious">Religious items</option>
+                                            <option value="sports">Sports Item</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="airlines">
+                                            <option disabled="disabled" selected="selected">Airlines</option>
+                                            <option value="Air India">Air India</option>
+                                            <option value="Jet Airways">Jet Airways</option>
+                                            <option value="Spicejet">Spicejet</option>
+                                            <option value="Indigo">Indigo</option>
+                                            <option value="Go Air">Go Air</option>
+                                            <option value="Vistara">Vistara</option>
+                                            <option value="Lufthansa">Lufthansa</option>
+                                            <option value="Air Asia">Air Asia</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        
+
+
+                        <!--<div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <select class="input--style-1" type="text" placeholder="Airlines" name="airlines">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>-->
+
+                        <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="from">
+                                            <option disabled="disabled" selected="selected">Travelling from</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Bangalore">Bangalore</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Pune">Pune</option>
+                                            <option value="Kolkata">Kolkata</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="Travelling from" name="from">
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="to">
+                                            <option disabled="disabled" selected="selected">Destination</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Bangalore">Bangalore</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Pune">Pune</option>
+                                            <option value="Kolkata">Kolkata</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="Destination" name="to">
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="Description" name="description">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="Phone Number" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green" type="submit" name="submit">Submit</button><br>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
